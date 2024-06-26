@@ -1,3 +1,7 @@
+:root {
+  --color-nav: #333;
+}
+
 body {
   background-color: #fff;
   font-size: 16px;
@@ -33,7 +37,7 @@ ul li {
 nav ul li a {
   font-size: 0.9375rem;
   padding: 0.9375rem;
-  color: #333333;
+  color: var(--color-nav);
   text-decoration: none;
 }
 
@@ -125,4 +129,46 @@ nav ul li a:hover {
   font-weight: 600;
   color: #fff;
   font-family: "Work Sans", sans-serif;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+}
+
+#social {
+  display: flex;
+  justify-content: center;
+}
+
+#social i {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  color: var(--color-nav);
+}
+
+@media (max-width: 960px) {
+  #header-container {
+    flex-direction: column;
+  }
+  .gallery {
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .gallery li {
+    width: 100%;
+    justify-content: center;
+  }
+  #header-container #logo {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-jpg{
+    width: 100%; /* Imagenes responsivas */
+    max-width: 100%; /* Imagenes responsivas */
+    height:auto;
+  }
 }
